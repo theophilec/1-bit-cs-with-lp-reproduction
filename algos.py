@@ -13,7 +13,7 @@ def reconstruct_biht(y, A, k_best, k_steps=20, tau=0.001):
     return -x
 
 
-def reconstruct_1bit(y, A, verbose=True):
+def reconstruct_1bit(y, A, verbose=False):
     """
     Solve the modified basis pursuit problem by Plan and Vershynin.
 
