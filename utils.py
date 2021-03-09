@@ -112,3 +112,10 @@ def snr(v_est, v_true):
     assert(v_est.shape == v_true.shape)
 
     return 10 * np.log10(norm2(v_true) ** 2 / norm2(v_est - v_true) ** 2)
+
+def hard_threshold(x, s):
+    x_sort_idx = np.argsort(abs(x))
+    x_thr = x.copy()
+    x_thr[x_sort_idx[:len(x)-s]] = 0
+    return x_thr
+
