@@ -36,16 +36,16 @@ def reconstruct_1bit(y, A, verbose=False):
     constraints = []
 
     # y_i*<a_i, x> >= 0
-    constraints += [
+    # 1/m sum() >= 1
+    constraints = [
             cp.multiply(y, (A @ x)) >= 0,
+            cp.sum(cp.multiply(y, A @ x)) / m >= 1,
         ]
 
-    # 1/m sum() >= 1
-    constraints.append(cp.sum(cp.multiply(y, A @ x)) / m >= 1)
 
     objective = cp.Minimize(cp.norm1(x))
     prob = cp.Problem(objective, constraints)
-    print("Calling solver.")
+#     print("Calling solver.")
     prob.solve(verbose=verbose)
 
     return x.value
