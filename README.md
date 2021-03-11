@@ -18,7 +18,7 @@ Theoretically, the approach has two main ingredients:
 
 ## Experiments 
 
-![alt text](presentation/figures/recon-synth-500-thresh.png)
+![alt text](presentation/figures/recon-synth-500-thresh.png){ width=50% }
 ![alt text](presentation/figures/recon-synth-500.png)
 ![alt text](presentation/figures/mnist.png)
 
