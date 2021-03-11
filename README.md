@@ -18,9 +18,9 @@ Theoretically, the approach has two main ingredients:
 
 ## Experiments 
 
-<img src="./presentation/figures/recon-synth-500-thresh.png" width="300">
-![alt text](presentation/figures/recon-synth-500.png)
-![alt text](presentation/figures/mnist.png)
+<img src="./presentation/figures/recon-synth-500-thresh.png" width="500">
+<img src="./presentation/figures/recon-synth-500.png" width="500">
+<img src="./presentation/figures/mnist.png" width="500">
 
 ### Synthetic sparse vectors
 
